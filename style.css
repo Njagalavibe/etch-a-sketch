@@ -1,7 +1,14 @@
+:root {
+    --primary-color: #27374D;
+    --primary-light: #FAF0D7;
+    --primary-dark: #424242;
+    --primary-red: #FF4273;
+}
+
 * {}
 
 body {
-    background-color: #27374D;
+    background-color: var(--primary-color);
 }
 
 .container {
@@ -14,7 +21,7 @@ body {
 
 .heading {
     font-size: 38px;
-    color: #FAF0D7;
+    color: var(--primary-light);
     font-family: 'Aboreto', cursive;
 
 }
@@ -24,7 +31,7 @@ body {
     margin: 10px;
     font-size: 20px;
     border-radius: 30px;
-    border: 2px solid#FAF0D7;
+    border: 2px solid var(--primary-light);
     cursor: pointer;
     transition: .2s ease-in-out 0s;
     font-family: 'Roboto Slab', serif;
@@ -32,11 +39,11 @@ body {
 }
 
 .color-mode:hover {
-    color: #FAF0D7;
+    color: var(--primary-light);
 
-    border: 2px solid#FF4273;
+    border: 2px solid var(--primary-red);
     transform: scale(1.25);
-    background-color: #FF4273;
+    background-color: var(--primary-red);
 }
 
 .grey-mode {
@@ -44,17 +51,17 @@ body {
     margin: 10px;
     font-size: 20px;
     border-radius: 30px;
-    border: 2px solid#FAF0D7;
+    border: 2px solid var(--primary-light);
     cursor: pointer;
     transition: .2s ease-in-out 0s;
     font-family: 'Roboto Slab', serif;
 }
 
 .grey-mode:hover {
-    color: #FAF0D7;
-    border: 2px solid#424242;
+    color: var(--primary-light);
+    border: 2px solid var(--primary-dark);
     transform: scale(1.25);
-    background-color: #424242;
+    background-color: var(--primary-dark);
 }
 
 .erase {
@@ -62,13 +69,14 @@ body {
     margin: 10px;
     font-size: 20px;
     border-radius: 30px;
-    border: 2px solid#FAF0D7;
+    border: 2px solid var(--primary-light);
     cursor: pointer;
     transition: .2s ease-in-out 0s;
     font-family: 'Roboto Slab', serif;
 }
-.erase:hover{
-    color: #FAF0D7;
+
+.erase:hover {
+    color: var(--primary-light);
     transform: scale(1.25);
 }
 
@@ -77,23 +85,23 @@ body {
     margin: 10px;
     font-size: 20px;
     border-radius: 30px;
-    border: 2px solid#FAF0D7;
+    border: 2px solid var(--primary-light);
     cursor: pointer;
     transition: .2s ease-in-out 0s;
     font-family: 'Roboto Slab', serif;
 }
-.reset:hover{
-   
+
+.reset:hover {
     transform: scale(1.25);
 }
 
 #sizeSlider {
     width: 600px;
-    color: #FF4273;
+    color: var(--primary-red);
 }
 
-#sizingSlider {
-    color: #FAF0D7;
+#sizingSlider-text {
+    color: var(--primary-light);
     font-size: 30px;
     margin-bottom: 0px;
     text-align: center;
