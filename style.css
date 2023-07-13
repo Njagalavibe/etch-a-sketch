@@ -13,21 +13,21 @@ body {
 
 .container {
     position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
+    left: 33%;
 }
 
 .heading {
-    font-size: 38px;
+    font-size: 30px;
     color: var(--primary-light);
     font-family: 'Aboreto', cursive;
-
+    text-align: center;
+}
+.selection-buttons{
+    margin-left: 10px;
 }
 
-.color-mode {
-    padding: 12px 25px 12px 25px;
+#color-mode {
+    padding: 12px 20px 12px 20px;
     margin: 10px;
     font-size: 20px;
     border-radius: 30px;
@@ -38,16 +38,16 @@ body {
 
 }
 
-.color-mode:hover {
+#color-mode:hover {
     color: var(--primary-light);
-
     border: 2px solid var(--primary-red);
     transform: scale(1.25);
     background-color: var(--primary-red);
+    
 }
 
-.grey-mode {
-    padding: 12px 25px 12px 25px;
+#grey-mode {
+    padding: 12px 20px 12px 20px;
     margin: 10px;
     font-size: 20px;
     border-radius: 30px;
@@ -55,17 +55,19 @@ body {
     cursor: pointer;
     transition: .2s ease-in-out 0s;
     font-family: 'Roboto Slab', serif;
+
 }
 
-.grey-mode:hover {
+#grey-mode:hover {
     color: var(--primary-light);
     border: 2px solid var(--primary-dark);
     transform: scale(1.25);
     background-color: var(--primary-dark);
+    
 }
 
-.erase {
-    padding: 12px 25px 12px 25px;
+#erase {
+    padding: 12px 20px 12px 20px;
     margin: 10px;
     font-size: 20px;
     border-radius: 30px;
@@ -75,13 +77,13 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
-.erase:hover {
+#erase:hover {
     color: var(--primary-light);
     transform: scale(1.25);
 }
 
-.reset {
-    padding: 12px 25px 12px 25px;
+#reset {
+    padding: 12px 20px 12px 20px;
     margin: 10px;
     font-size: 20px;
     border-radius: 30px;
@@ -91,13 +93,14 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
-.reset:hover {
+#reset:hover {
     transform: scale(1.25);
+    margin: 10px;
 }
 
 #sizeSlider {
     width: 600px;
-    color: var(--primary-red);
+    
 }
 
 #sizingSlider-text {
@@ -105,4 +108,14 @@ body {
     font-size: 30px;
     margin-bottom: 0px;
     text-align: center;
+}
+.sketch-pad{
+    width: 600px;
+    height: 600px;
+    display: grid;
+    align-content: center;
+}
+input[type=range]{
+    background-color:var(--primary-red) ;
+    cursor: pointer;
 }
